@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kovai Restaurant | Burger</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loader"><div class="spinner"></div></div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand gradient-text" href="index.html">Kovai Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html#menuSection">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactSection">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="nav-link fs-5" href="#" id="darkModeToggle" title="Toggle Dark Mode">
+                            <i class="bi bi-moon-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container" style="margin-top: 100px;">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h1 class="display-4 fw-bold gradient-text">Burger Menu</h1>
+            <p class="lead">Explore our premium selection of burgers.</p>
+        </div>
+    </header>
+
+
+    <!-- Search Section -->
+    <section class="search-filter-section container" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <input type="text" id="productSearchInput" class="search-box form-control" placeholder="Search product (e.g. Cheese, Veg...)">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="row g-4">
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Chicken Cheese Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Chicken Cheese Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹149</p>
+                        <button onclick="orderOnWhatsApp('Chicken Cheese Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Spicy Tower Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Spicy Tower Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹179</p>
+                        <button onclick="orderOnWhatsApp('Spicy Tower Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="BBQ Chicken Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">BBQ Chicken Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹169</p>
+                        <button onclick="orderOnWhatsApp('BBQ Chicken Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Classic Veg Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Classic Veg Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹119</p>
+                        <button onclick="orderOnWhatsApp('Classic Veg Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Paneer Tikka Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Paneer Tikka Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹139</p>
+                        <button onclick="orderOnWhatsApp('Paneer Tikka Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Double Patty Mutton Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Double Patty Mutton Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹249</p>
+                        <button onclick="orderOnWhatsApp('Double Patty Mutton Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Crispy Fish Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Crispy Fish Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹189</p>
+                        <button onclick="orderOnWhatsApp('Crispy Fish Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Mushroom Swiss Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Mushroom Swiss Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹159</p>
+                        <button onclick="orderOnWhatsApp('Mushroom Swiss Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Peri Peri Chicken Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Peri Peri Chicken Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹175</p>
+                        <button onclick="orderOnWhatsApp('Peri Peri Chicken Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Jumbo Zinger Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h5 class="fw-bold">Jumbo Zinger Burger</h5>
+                        <p class="text-success fw-bold fs-5 mb-3">₹199</p>
+                        <button onclick="orderOnWhatsApp('Jumbo Zinger Burger')" class="btn-primary-custom mt-auto w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center" id="contactSection">
+        <div class="container">
+            <div class="row g-4 text-start justify-content-center mb-4" data-aos="fade-up">
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-clock-history footer-icons"></i>
+                    <h5>24x7 Delivery</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-wallet2 footer-icons"></i>
+                    <h5>Cash on Delivery</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-truck footer-icons"></i>
+                    <h5>Fast & Free Delivery</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-stars footer-icons"></i>
+                    <h5>Fresh & Hygienic Foods</h5>
+                </div>
+            </div>
+            <hr>
+            <div class="row text-start mt-4">
+                <div class="col-md-6 mb-3">
+                    <h4 class="gradient-text fw-bold">Contact Info</h4>
+                    <p><i class="bi bi-telephone-fill text-primary"></i> +91 9715948824</p>
+                    <p><i class="bi bi-envelope-fill text-danger"></i> kovairestaurant@gmail.com</p>
+                    <p><i class="bi bi-geo-alt-fill text-success"></i> Gandhipuram, Coimbatore, Tamil Nadu</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-2 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2 fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-4"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h4 class="gradient-text fw-bold">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#menuSection">Menu</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#contactSection">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="mt-4 text-secondary">
+                &copy; 2026 Kovai Restaurant. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-btns">
+        <a href="tel:+919715948824" class="float-btn btn-call" title="Call Us"><i class="bi bi-telephone-fill"></i></a>
+        <a href="https://wa.me/919715948824" target="_blank" class="float-btn btn-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://maps.google.com/?q=Gandhipuram, Coimbatore, Tamil Nadu" target="_blank" class="float-btn btn-loc" title="Location"><i class="bi bi-geo-alt-fill"></i></a>
+    </div>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

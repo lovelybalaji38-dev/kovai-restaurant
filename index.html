@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kovai Restaurant | Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand gradient-text" href="index.html">Kovai Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menuSection">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactSection">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="nav-link fs-5" href="#" id="darkModeToggle" title="Toggle Dark Mode">
+                            <i class="bi bi-moon-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" data-aos="fade-up">
+            <h1 class="display-3 fw-bold gradient-text mb-3">Welcome to Kovai Restaurant</h1>
+            <p class="lead fw-light">Experience the finest premium dining in town.</p>
+        </div>
+    </header>
+
+    <!-- Image Slider Section -->
+    <section class="container mt-5" data-aos="fade-up">
+        <h2 class="text-center mb-4 gradient-text fw-bold">Our Specialties</h2>
+        <div class="slider-container shadow-sm">
+            <button class="slider-btn slider-prev" id="sliderPrev"><i class="bi bi-chevron-left"></i></button>
+            <div class="slider-track" id="sliderTrack">
+                <div class="slide">
+                    <img src="images/burger_1778911920595.png" alt="Burger">
+                    <div class="slide-caption"><h3>Burger</h3></div>
+                </div>
+                <div class="slide">
+                    <img src="images/sandwich_1778911939159.png" alt="Sandwich">
+                    <div class="slide-caption"><h3>Sandwich</h3></div>
+                </div>
+                <div class="slide">
+                    <img src="images/curry_1778911959834.png" alt="Curry">
+                    <div class="slide-caption"><h3>Curry</h3></div>
+                </div>
+                <div class="slide">
+                    <img src="images/chicken_1778911981600.png" alt="Chicken">
+                    <div class="slide-caption"><h3>Chicken</h3></div>
+                </div>
+                <div class="slide">
+                    <img src="images/juice_1778912005972.png" alt="Juice">
+                    <div class="slide-caption"><h3>Juice</h3></div>
+                </div>
+                <div class="slide">
+                    <img src="images/milkshake_1778912029295.png" alt="Milkshake">
+                    <div class="slide-caption"><h3>Milkshake</h3></div>
+                </div>
+                <div class="slide">
+                    <img src="images/grilled_chicken_1778912046253.png" alt="Grilled Chicken">
+                    <div class="slide-caption"><h3>Grilled Chicken</h3></div>
+                </div>
+                <div class="slide">
+                    <img src="images/special_menu_1778912062718.png" alt="Special Menu">
+                    <div class="slide-caption"><h3>Special Menu</h3></div>
+                </div>
+            </div>
+            <button class="slider-btn slider-next" id="sliderNext"><i class="bi bi-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-filter-section container" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <input type="text" id="searchInput" class="search-box form-control" placeholder="Search category (e.g. Burger, Curry...)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="container mb-5" id="menuSection">
+        <h2 class="text-center mb-4 gradient-text fw-bold" data-aos="fade-up">Menu Categories</h2>
+        <div class="row g-4">
+            <!-- Category Item -->
+            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Burger" data-aos="fade-up" data-aos-delay="100">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/burger_1778911920595.png" alt="Burger">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h4 class="fw-bold">Burger</h4>
+                        <p class="small text-secondary mb-3">Juicy premium chicken cheese burgers.</p>
+                        <a href="burger.html" class="btn-primary-custom mt-auto">Select Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Item -->
+            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Sandwich" data-aos="fade-up" data-aos-delay="200">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/sandwich_1778911939159.png" alt="Sandwich">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h4 class="fw-bold">Sandwich</h4>
+                        <p class="small text-secondary mb-3">Healthy and rich club sandwiches.</p>
+                        <a href="sandwich.html" class="btn-primary-custom mt-auto">Select Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Item -->
+            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Curry" data-aos="fade-up" data-aos-delay="300">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/curry_1778911959834.png" alt="Curry">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h4 class="fw-bold">Curry</h4>
+                        <p class="small text-secondary mb-3">Authentic Indian curries and gravies.</p>
+                        <a href="curry.html" class="btn-primary-custom mt-auto">Select Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Item -->
+            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Chicken" data-aos="fade-up" data-aos-delay="400">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/chicken_1778911981600.png" alt="Chicken">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h4 class="fw-bold">Chicken</h4>
+                        <p class="small text-secondary mb-3">Crispy fried chicken and starters.</p>
+                        <a href="chicken.html" class="btn-primary-custom mt-auto">Select Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Item -->
+            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Juice" data-aos="fade-up" data-aos-delay="100">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/juice_1778912005972.png" alt="Juice">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h4 class="fw-bold">Juice</h4>
+                        <p class="small text-secondary mb-3">Freshly squeezed fruit juices.</p>
+                        <a href="juice.html" class="btn-primary-custom mt-auto">Select Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Item -->
+            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Milkshake" data-aos="fade-up" data-aos-delay="200">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/milkshake_1778912029295.png" alt="Milkshake">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h4 class="fw-bold">Milkshake</h4>
+                        <p class="small text-secondary mb-3">Thick, creamy, and chilled milkshakes.</p>
+                        <a href="milkshake.html" class="btn-primary-custom mt-auto">Select Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Item -->
+            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Grilled Chicken" data-aos="fade-up" data-aos-delay="300">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/grilled_chicken_1778912046253.png" alt="Grilled Chicken">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h4 class="fw-bold">Grilled Chicken</h4>
+                        <p class="small text-secondary mb-3">Healthy and spicy whole grilled chicken.</p>
+                        <a href="grilled-chicken.html" class="btn-primary-custom mt-auto">Select Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Item -->
+            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Special Menu" data-aos="fade-up" data-aos-delay="400">
+                <div class="menu-card d-flex flex-column">
+                    <div class="card-img-wrapper">
+                        <img src="images/special_menu_1778912062718.png" alt="Special Menu">
+                    </div>
+                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+                        <h4 class="fw-bold">Special Menu</h4>
+                        <p class="small text-secondary mb-3">Premium gourmet steaks and platters.</p>
+                        <a href="special-menu.html" class="btn-primary-custom mt-auto">Select Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center" id="contactSection">
+        <div class="container">
+            <div class="row g-4 text-start justify-content-center mb-4" data-aos="fade-up">
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-clock-history footer-icons"></i>
+                    <h5>24x7 Delivery</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-wallet2 footer-icons"></i>
+                    <h5>Cash on Delivery</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-truck footer-icons"></i>
+                    <h5>Fast & Free Delivery</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-stars footer-icons"></i>
+                    <h5>Fresh & Hygienic Foods</h5>
+                </div>
+            </div>
+            <hr>
+            <div class="row text-start mt-4">
+                <div class="col-md-6 mb-3">
+                    <h4 class="gradient-text fw-bold">Contact Info</h4>
+                    <p><i class="bi bi-telephone-fill text-primary"></i> +91 9715948824</p>
+                    <p><i class="bi bi-envelope-fill text-danger"></i> kovairestaurant@gmail.com</p>
+                    <p><i class="bi bi-geo-alt-fill text-success"></i> Gandhipuram, Coimbatore, Tamil Nadu</p>
+                    
+                    <div class="mt-3">
+                        <a href="#" class="me-2 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2 fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-4"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h4 class="gradient-text fw-bold">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#menuSection">Menu</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#contactSection">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="mt-4 text-secondary">
+                &copy; 2026 Kovai Restaurant. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="tel:+919715948824" class="float-btn btn-call" title="Call Us"><i class="bi bi-telephone-fill"></i></a>
+        <a href="https://wa.me/919715948824" target="_blank" class="float-btn btn-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://maps.google.com/?q=Gandhipuram, Coimbatore, Tamil Nadu" target="_blank" class="float-btn btn-loc" title="Location"><i class="bi bi-geo-alt-fill"></i></a>
+    </div>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
