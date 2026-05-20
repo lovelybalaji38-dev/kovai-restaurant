@@ -36,20 +36,20 @@ def process_file(filepath):
     <meta name="keywords" content="Best Restaurant in Coimbatore, Best Biryani in Gandhipuram, Family Restaurant in Coimbatore, Food Delivery in Coimbatore, Restaurant Near Me, Kovai Restaurant, {page_name if not is_index else 'Premium Dining'}">
     <meta name="author" content="Kovai Restaurant">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kovairestaurant.com/{filename}">
+    <link rel="canonical" href="https://kovai-restaurant.vercel.app/{filename}">
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="{new_title}">
     <meta property="og:description" content="{desc}">
-    <meta property="og:image" content="https://kovairestaurant.com/images/chicken_1778911981600.png">
-    <meta property="og:url" content="https://kovairestaurant.com/{filename}">
+    <meta property="og:image" content="https://kovai-restaurant.vercel.app/images/chicken_1778911981600.png">
+    <meta property="og:url" content="https://kovai-restaurant.vercel.app/{filename}">
     <meta property="og:type" content="restaurant.restaurant">
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{new_title}">
     <meta name="twitter:description" content="{desc}">
-    <meta name="twitter:image" content="https://kovairestaurant.com/images/chicken_1778911981600.png">
+    <meta name="twitter:image" content="https://kovai-restaurant.vercel.app/images/chicken_1778911981600.png">
 
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,9 +61,9 @@ def process_file(filepath):
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "name": "Kovai Restaurant",
-      "image": "https://kovairestaurant.com/images/chicken_1778911981600.png",
-      "@id": "https://kovairestaurant.com",
-      "url": "https://kovairestaurant.com",
+      "image": "https://kovai-restaurant.vercel.app/images/chicken_1778911981600.png",
+      "@id": "https://kovai-restaurant.vercel.app",
+      "url": "https://kovai-restaurant.vercel.app",
       "telephone": "+91 8754678824",
       "address": {{
         "@type": "PostalAddress",
