@@ -1,294 +1,395 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kovai Restaurant | Home</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kovai Restaurant | Best Restaurant in Coimbatore</title>
+<meta content="Experience the best Biryani and premium dining at Kovai Restaurant in Gandhipuram, Coimbatore. Family restaurant, fresh food, and 24x7 delivery." name="description"/>
+<meta content="Best Restaurant in Coimbatore, Best Biryani in Gandhipuram, Family Restaurant in Coimbatore, Food Delivery in Coimbatore, Restaurant Near Me, Kovai Restaurant, Premium Dining" name="keywords"/>
+<meta content="Kovai Restaurant" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://kovairestaurant.com/index.html" rel="canonical"/>
+<!-- Open Graph Tags -->
+<meta content="Kovai Restaurant | Best Restaurant in Coimbatore" property="og:title"/>
+<meta content="Experience the best Biryani and premium dining at Kovai Restaurant in Gandhipuram, Coimbatore. Family restaurant, fresh food, and 24x7 delivery." property="og:description"/>
+<meta content="https://kovairestaurant.com/images/chicken_1778911981600.png" property="og:image"/>
+<meta content="https://kovairestaurant.com/index.html" property="og:url"/>
+<meta content="restaurant.restaurant" property="og:type"/>
+<!-- Twitter Card Tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Kovai Restaurant | Best Restaurant in Coimbatore" name="twitter:title"/>
+<meta content="Experience the best Biryani and premium dining at Kovai Restaurant in Gandhipuram, Coimbatore. Family restaurant, fresh food, and 24x7 delivery." name="twitter:description"/>
+<meta content="https://kovairestaurant.com/images/chicken_1778911981600.png" name="twitter:image"/>
+<!-- Preconnect for Performance -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<!-- Schema Markup -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Kovai Restaurant",
+      "image": "https://kovairestaurant.com/images/chicken_1778911981600.png",
+      "@id": "https://kovairestaurant.com",
+      "url": "https://kovairestaurant.com",
+      "telephone": "+91 8754678824",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gandhipuram",
+        "addressLocality": "Coimbatore",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "641012",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 11.0183,
+        "longitude": 76.9725
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "servesCuisine": ["Indian", "Biryani", "Fast Food"],
+      "priceRange": "$$"
+    }
+    </script>
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
+<!-- Loader -->
+<div id="loader">
+<div class="spinner"></div>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand gradient-text" href="index.html">Kovai Restaurant</a>
+<button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav align-items-center">
+<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#menuSection">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="#contactSection">Contact</a></li>
+<li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+<a aria-label="Toggle Dark Mode" class="nav-link fs-5" href="#" id="darkModeToggle" title="Toggle Dark Mode">
+<i class="bi bi-moon-fill"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Hero Header -->
+<header class="hero-section">
+<div class="hero-overlay"></div>
+<div class="container hero-content" data-aos="fade-up">
+<h1 class="display-3 fw-bold gradient-text mb-3">Welcome to Kovai Restaurant</h1>
+<p class="lead fw-light">Experience the finest premium dining in town.</p>
+</div>
+</header>
+<!-- Image Slider Section -->
+<section class="container mt-5" data-aos="fade-up">
+<h2 class="text-center mb-4 gradient-text fw-bold">Our Specialties</h2>
+<div class="slider-container shadow-sm">
+<button aria-label="Previous slide" class="slider-btn slider-prev" id="sliderPrev"><i class="bi bi-chevron-left"></i></button>
+<div class="slider-track" id="sliderTrack">
+<div class="slide">
+<img alt="Burger at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/burger_1778911920595.png"/>
+<div class="slide-caption"><h3>Burger</h3></div>
+</div>
+<div class="slide">
+<img alt="Sandwich at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/sandwich_1778911939159.png"/>
+<div class="slide-caption"><h3>Sandwich</h3></div>
+</div>
+<div class="slide">
+<img alt="Curry at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/curry_1778911959834.png"/>
+<div class="slide-caption"><h3>Curry</h3></div>
+</div>
+<div class="slide">
+<img alt="Chicken at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/chicken_1778911981600.png"/>
+<div class="slide-caption"><h3>Chicken</h3></div>
+</div>
+<div class="slide">
+<img alt="Juice at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/juice_1778912005972.png"/>
+<div class="slide-caption"><h3>Juice</h3></div>
+</div>
+<div class="slide">
+<img alt="Milkshake at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/milkshake_1778912029295.png"/>
+<div class="slide-caption"><h3>Milkshake</h3></div>
+</div>
+<div class="slide">
+<img alt="Grilled Chicken at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/grilled_chicken_1778912046253.png"/>
+<div class="slide-caption"><h3>Grilled Chicken</h3></div>
+</div>
+<div class="slide">
+<img alt="Special Menu at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/special_menu_1778912062718.png"/>
+<div class="slide-caption"><h3>Special Menu</h3></div>
+</div>
+</div>
+<button aria-label="Next slide" class="slider-btn slider-next" id="sliderNext"><i class="bi bi-chevron-right"></i></button>
+</div>
+</section>
+<!-- Search Section -->
+<section class="search-filter-section container" data-aos="fade-up">
+<div class="row justify-content-center">
+<div class="col-md-6 text-center">
+<input class="search-box form-control" id="searchInput" placeholder="Search category (e.g. Burger, Curry...)" type="text"/>
+</div>
+</div>
+</section>
+<!-- Menu Categories -->
+<section class="container mb-5" id="menuSection">
+<h2 class="text-center mb-4 gradient-text fw-bold" data-aos="fade-up">Menu Categories</h2>
+<div class="row g-4">
+<!-- Category Item -->
+<div class="col-sm-6 col-md-4 col-lg-3 category-item" data-aos="fade-up" data-aos-delay="100" data-title="Burger">
+<div class="menu-card d-flex flex-column">
+<div class="card-img-wrapper">
+<img alt="Burger at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/burger_1778911920595.png"/>
+</div>
+<div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+<h4 class="fw-bold">Burger</h4>
+<p class="small text-secondary mb-3">Juicy premium chicken cheese burgers.</p>
+<a class="btn-primary-custom mt-auto" href="burger.html">Select Now</a>
+</div>
+</div>
+</div>
+<!-- Category Item -->
+<div class="col-sm-6 col-md-4 col-lg-3 category-item" data-aos="fade-up" data-aos-delay="200" data-title="Sandwich">
+<div class="menu-card d-flex flex-column">
+<div class="card-img-wrapper">
+<img alt="Sandwich at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/sandwich_1778911939159.png"/>
+</div>
+<div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+<h4 class="fw-bold">Sandwich</h4>
+<p class="small text-secondary mb-3">Healthy and rich club sandwiches.</p>
+<a class="btn-primary-custom mt-auto" href="sandwich.html">Select Now</a>
+</div>
+</div>
+</div>
+<!-- Category Item -->
+<div class="col-sm-6 col-md-4 col-lg-3 category-item" data-aos="fade-up" data-aos-delay="300" data-title="Curry">
+<div class="menu-card d-flex flex-column">
+<div class="card-img-wrapper">
+<img alt="Curry at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/curry_1778911959834.png"/>
+</div>
+<div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+<h4 class="fw-bold">Curry</h4>
+<p class="small text-secondary mb-3">Authentic Indian curries and gravies.</p>
+<a class="btn-primary-custom mt-auto" href="curry.html">Select Now</a>
+</div>
+</div>
+</div>
+<!-- Category Item -->
+<div class="col-sm-6 col-md-4 col-lg-3 category-item" data-aos="fade-up" data-aos-delay="400" data-title="Chicken">
+<div class="menu-card d-flex flex-column">
+<div class="card-img-wrapper">
+<img alt="Chicken at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/chicken_1778911981600.png"/>
+</div>
+<div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+<h4 class="fw-bold">Chicken</h4>
+<p class="small text-secondary mb-3">Crispy fried chicken and starters.</p>
+<a class="btn-primary-custom mt-auto" href="chicken.html">Select Now</a>
+</div>
+</div>
+</div>
+<!-- Category Item -->
+<div class="col-sm-6 col-md-4 col-lg-3 category-item" data-aos="fade-up" data-aos-delay="100" data-title="Juice">
+<div class="menu-card d-flex flex-column">
+<div class="card-img-wrapper">
+<img alt="Juice at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/juice_1778912005972.png"/>
+</div>
+<div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+<h4 class="fw-bold">Juice</h4>
+<p class="small text-secondary mb-3">Freshly squeezed fruit juices.</p>
+<a class="btn-primary-custom mt-auto" href="juice.html">Select Now</a>
+</div>
+</div>
+</div>
+<!-- Category Item -->
+<div class="col-sm-6 col-md-4 col-lg-3 category-item" data-aos="fade-up" data-aos-delay="200" data-title="Milkshake">
+<div class="menu-card d-flex flex-column">
+<div class="card-img-wrapper">
+<img alt="Milkshake at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/milkshake_1778912029295.png"/>
+</div>
+<div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+<h4 class="fw-bold">Milkshake</h4>
+<p class="small text-secondary mb-3">Thick, creamy, and chilled milkshakes.</p>
+<a class="btn-primary-custom mt-auto" href="milkshake.html">Select Now</a>
+</div>
+</div>
+</div>
+<!-- Category Item -->
+<div class="col-sm-6 col-md-4 col-lg-3 category-item" data-aos="fade-up" data-aos-delay="300" data-title="Grilled Chicken">
+<div class="menu-card d-flex flex-column">
+<div class="card-img-wrapper">
+<img alt="Grilled Chicken at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/grilled_chicken_1778912046253.png"/>
+</div>
+<div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+<h4 class="fw-bold">Grilled Chicken</h4>
+<p class="small text-secondary mb-3">Healthy and spicy whole grilled chicken.</p>
+<a class="btn-primary-custom mt-auto" href="grilled-chicken.html">Select Now</a>
+</div>
+</div>
+</div>
+<!-- Category Item -->
+<div class="col-sm-6 col-md-4 col-lg-3 category-item" data-aos="fade-up" data-aos-delay="400" data-title="Special Menu">
+<div class="menu-card d-flex flex-column">
+<div class="card-img-wrapper">
+<img alt="Special Menu at Kovai Restaurant Coimbatore" decoding="async" loading="lazy" src="images/special_menu_1778912062718.png"/>
+</div>
+<div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+<h4 class="fw-bold">Special Menu</h4>
+<p class="small text-secondary mb-3">Premium gourmet steaks and platters.</p>
+<a class="btn-primary-custom mt-auto" href="special-menu.html">Select Now</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
 
-    <!-- Loader -->
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
+<!-- Customer Reviews Section -->
+<section class="container mb-5" data-aos="fade-up" id="reviewsSection">
+<h2 class="text-center mb-4 gradient-text fw-bold">What Our Customers Say</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card h-100 shadow-sm border-0 p-3" style="background: var(--bg-card); color: var(--text-color);">
+<div class="card-body text-center">
+<div class="text-warning mb-2 fs-5">
+<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+</div>
+<p class="card-text">"Best biryani in Coimbatore! The taste is authentic and the portion sizes are great. Highly recommended."</p>
+<h6 class="fw-bold mt-3 mb-0">- Rahul Sharma</h6>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card h-100 shadow-sm border-0 p-3" style="background: var(--bg-card); color: var(--text-color);">
+<div class="card-body text-center">
+<div class="text-warning mb-2 fs-5">
+<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+</div>
+<p class="card-text">"Excellent family restaurant. The ambiance is great, and the chicken dishes are crispy and delicious."</p>
+<h6 class="fw-bold mt-3 mb-0">- Priya Dinesh</h6>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card h-100 shadow-sm border-0 p-3" style="background: var(--bg-card); color: var(--text-color);">
+<div class="card-body text-center">
+<div class="text-warning mb-2 fs-5">
+<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+</div>
+<p class="card-text">"Affordable and tasty food. Their juices and milkshakes are perfectly made. My go-to place for dinner."</p>
+<h6 class="fw-bold mt-3 mb-0">- Arvind K.</h6>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer text-center" id="contactSection">
+<div class="container">
+<div class="row g-4 text-start justify-content-center mb-4" data-aos="fade-up">
+<div class="col-md-3 text-center">
+<i class="bi bi-clock-history footer-icons"></i>
+<h5>24x7 Delivery</h5>
+</div>
+<div class="col-md-3 text-center">
+<i class="bi bi-wallet2 footer-icons"></i>
+<h5>Cash on Delivery</h5>
+</div>
+<div class="col-md-3 text-center">
+<i class="bi bi-truck footer-icons"></i>
+<h5>Fast &amp; Free Delivery</h5>
+</div>
+<div class="col-md-3 text-center">
+<i class="bi bi-stars footer-icons"></i>
+<h5>Fresh &amp; Hygienic Foods</h5>
+</div>
+</div>
+<hr/>
+<div class="row text-start mt-4 mb-4" data-aos="fade-up">
+<div class="col-12">
+<h4 class="gradient-text fw-bold mb-3">Find Us Here</h4>
+<div class="ratio ratio-21x9 shadow-sm" style="border-radius: 10px; overflow: hidden;">
+<iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.3268800936353!2d76.96349787480854!3d11.014073389149028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8585483984bb3%3A0x6b772596be7f6789!2sGandhipuram%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+</div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand gradient-text" href="index.html">Kovai Restaurant</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#menuSection">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contactSection">Contact</a></li>
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="nav-link fs-5" href="#" id="darkModeToggle" title="Toggle Dark Mode">
-                            <i class="bi bi-moon-fill"></i>
-                        </a>
-                    </li>
-                </ul>
+<div class="row text-start mt-4">
+<div class="col-md-6 mb-3">
+<h4 class="gradient-text fw-bold">Contact Info</h4>
+<p><i class="bi bi-telephone-fill text-primary"></i> +91 9715948824</p>
+<p><i class="bi bi-envelope-fill text-danger"></i> kovairestaurant@gmail.com</p>
+<p><i class="bi bi-geo-alt-fill text-success"></i> Gandhipuram, Coimbatore, Tamil Nadu</p>
+<div class="mt-3">
+<a class="me-2 fs-4" href="#"><i class="bi bi-facebook"></i></a>
+<a class="me-2 fs-4" href="#"><i class="bi bi-instagram"></i></a>
+<a class="fs-4" href="#"><i class="bi bi-twitter"></i></a>
+</div>
+</div>
+<div class="col-md-6 mb-3">
+<h4 class="gradient-text fw-bold">Quick Links</h4>
+<ul class="list-unstyled">
+<li><a href="index.html">Home</a></li>
+<li><a href="#menuSection">Menu</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="#contactSection">Contact</a></li>
+</ul>
+</div>
+</div>
+<hr/>
+<div class="mt-4 text-secondary">
+                © 2026 Kovai Restaurant. All Rights Reserved.
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Header -->
-    <header class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content" data-aos="fade-up">
-            <h1 class="display-3 fw-bold gradient-text mb-3">Welcome to Kovai Restaurant</h1>
-            <p class="lead fw-light">Experience the finest premium dining in town.</p>
-        </div>
-    </header>
-
-    <!-- Image Slider Section -->
-    <section class="container mt-5" data-aos="fade-up">
-        <h2 class="text-center mb-4 gradient-text fw-bold">Our Specialties</h2>
-        <div class="slider-container shadow-sm">
-            <button class="slider-btn slider-prev" id="sliderPrev"><i class="bi bi-chevron-left"></i></button>
-            <div class="slider-track" id="sliderTrack">
-                <div class="slide">
-                    <img src="images/burger_1778911920595.png" alt="Burger">
-                    <div class="slide-caption"><h3>Burger</h3></div>
-                </div>
-                <div class="slide">
-                    <img src="images/sandwich_1778911939159.png" alt="Sandwich">
-                    <div class="slide-caption"><h3>Sandwich</h3></div>
-                </div>
-                <div class="slide">
-                    <img src="images/curry_1778911959834.png" alt="Curry">
-                    <div class="slide-caption"><h3>Curry</h3></div>
-                </div>
-                <div class="slide">
-                    <img src="images/chicken_1778911981600.png" alt="Chicken">
-                    <div class="slide-caption"><h3>Chicken</h3></div>
-                </div>
-                <div class="slide">
-                    <img src="images/juice_1778912005972.png" alt="Juice">
-                    <div class="slide-caption"><h3>Juice</h3></div>
-                </div>
-                <div class="slide">
-                    <img src="images/milkshake_1778912029295.png" alt="Milkshake">
-                    <div class="slide-caption"><h3>Milkshake</h3></div>
-                </div>
-                <div class="slide">
-                    <img src="images/grilled_chicken_1778912046253.png" alt="Grilled Chicken">
-                    <div class="slide-caption"><h3>Grilled Chicken</h3></div>
-                </div>
-                <div class="slide">
-                    <img src="images/special_menu_1778912062718.png" alt="Special Menu">
-                    <div class="slide-caption"><h3>Special Menu</h3></div>
-                </div>
-            </div>
-            <button class="slider-btn slider-next" id="sliderNext"><i class="bi bi-chevron-right"></i></button>
-        </div>
-    </section>
-
-    <!-- Search Section -->
-    <section class="search-filter-section container" data-aos="fade-up">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <input type="text" id="searchInput" class="search-box form-control" placeholder="Search category (e.g. Burger, Curry...)">
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Categories -->
-    <section class="container mb-5" id="menuSection">
-        <h2 class="text-center mb-4 gradient-text fw-bold" data-aos="fade-up">Menu Categories</h2>
-        <div class="row g-4">
-            <!-- Category Item -->
-            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Burger" data-aos="fade-up" data-aos-delay="100">
-                <div class="menu-card d-flex flex-column">
-                    <div class="card-img-wrapper">
-                        <img src="images/burger_1778911920595.png" alt="Burger">
-                    </div>
-                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
-                        <h4 class="fw-bold">Burger</h4>
-                        <p class="small text-secondary mb-3">Juicy premium chicken cheese burgers.</p>
-                        <a href="burger.html" class="btn-primary-custom mt-auto">Select Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Item -->
-            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Sandwich" data-aos="fade-up" data-aos-delay="200">
-                <div class="menu-card d-flex flex-column">
-                    <div class="card-img-wrapper">
-                        <img src="images/sandwich_1778911939159.png" alt="Sandwich">
-                    </div>
-                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
-                        <h4 class="fw-bold">Sandwich</h4>
-                        <p class="small text-secondary mb-3">Healthy and rich club sandwiches.</p>
-                        <a href="sandwich.html" class="btn-primary-custom mt-auto">Select Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Item -->
-            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Curry" data-aos="fade-up" data-aos-delay="300">
-                <div class="menu-card d-flex flex-column">
-                    <div class="card-img-wrapper">
-                        <img src="images/curry_1778911959834.png" alt="Curry">
-                    </div>
-                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
-                        <h4 class="fw-bold">Curry</h4>
-                        <p class="small text-secondary mb-3">Authentic Indian curries and gravies.</p>
-                        <a href="curry.html" class="btn-primary-custom mt-auto">Select Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Item -->
-            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Chicken" data-aos="fade-up" data-aos-delay="400">
-                <div class="menu-card d-flex flex-column">
-                    <div class="card-img-wrapper">
-                        <img src="images/chicken_1778911981600.png" alt="Chicken">
-                    </div>
-                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
-                        <h4 class="fw-bold">Chicken</h4>
-                        <p class="small text-secondary mb-3">Crispy fried chicken and starters.</p>
-                        <a href="chicken.html" class="btn-primary-custom mt-auto">Select Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Item -->
-            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Juice" data-aos="fade-up" data-aos-delay="100">
-                <div class="menu-card d-flex flex-column">
-                    <div class="card-img-wrapper">
-                        <img src="images/juice_1778912005972.png" alt="Juice">
-                    </div>
-                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
-                        <h4 class="fw-bold">Juice</h4>
-                        <p class="small text-secondary mb-3">Freshly squeezed fruit juices.</p>
-                        <a href="juice.html" class="btn-primary-custom mt-auto">Select Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Item -->
-            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Milkshake" data-aos="fade-up" data-aos-delay="200">
-                <div class="menu-card d-flex flex-column">
-                    <div class="card-img-wrapper">
-                        <img src="images/milkshake_1778912029295.png" alt="Milkshake">
-                    </div>
-                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
-                        <h4 class="fw-bold">Milkshake</h4>
-                        <p class="small text-secondary mb-3">Thick, creamy, and chilled milkshakes.</p>
-                        <a href="milkshake.html" class="btn-primary-custom mt-auto">Select Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Item -->
-            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Grilled Chicken" data-aos="fade-up" data-aos-delay="300">
-                <div class="menu-card d-flex flex-column">
-                    <div class="card-img-wrapper">
-                        <img src="images/grilled_chicken_1778912046253.png" alt="Grilled Chicken">
-                    </div>
-                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
-                        <h4 class="fw-bold">Grilled Chicken</h4>
-                        <p class="small text-secondary mb-3">Healthy and spicy whole grilled chicken.</p>
-                        <a href="grilled-chicken.html" class="btn-primary-custom mt-auto">Select Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Item -->
-            <div class="col-sm-6 col-md-4 col-lg-3 category-item" data-title="Special Menu" data-aos="fade-up" data-aos-delay="400">
-                <div class="menu-card d-flex flex-column">
-                    <div class="card-img-wrapper">
-                        <img src="images/special_menu_1778912062718.png" alt="Special Menu">
-                    </div>
-                    <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
-                        <h4 class="fw-bold">Special Menu</h4>
-                        <p class="small text-secondary mb-3">Premium gourmet steaks and platters.</p>
-                        <a href="special-menu.html" class="btn-primary-custom mt-auto">Select Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center" id="contactSection">
-        <div class="container">
-            <div class="row g-4 text-start justify-content-center mb-4" data-aos="fade-up">
-                <div class="col-md-3 text-center">
-                    <i class="bi bi-clock-history footer-icons"></i>
-                    <h5>24x7 Delivery</h5>
-                </div>
-                <div class="col-md-3 text-center">
-                    <i class="bi bi-wallet2 footer-icons"></i>
-                    <h5>Cash on Delivery</h5>
-                </div>
-                <div class="col-md-3 text-center">
-                    <i class="bi bi-truck footer-icons"></i>
-                    <h5>Fast & Free Delivery</h5>
-                </div>
-                <div class="col-md-3 text-center">
-                    <i class="bi bi-stars footer-icons"></i>
-                    <h5>Fresh & Hygienic Foods</h5>
-                </div>
-            </div>
-            <hr>
-            <div class="row text-start mt-4">
-                <div class="col-md-6 mb-3">
-                    <h4 class="gradient-text fw-bold">Contact Info</h4>
-                    <p><i class="bi bi-telephone-fill text-primary"></i> +91 9715948824</p>
-                    <p><i class="bi bi-envelope-fill text-danger"></i> kovairestaurant@gmail.com</p>
-                    <p><i class="bi bi-geo-alt-fill text-success"></i> Gandhipuram, Coimbatore, Tamil Nadu</p>
-                    
-                    <div class="mt-3">
-                        <a href="#" class="me-2 fs-4"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="me-2 fs-4"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="fs-4"><i class="bi bi-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <h4 class="gradient-text fw-bold">Quick Links</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#menuSection">Menu</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#contactSection">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="mt-4 text-secondary">
-                &copy; 2026 Kovai Restaurant. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating Buttons -->
-    <div class="floating-btns">
-        <a href="tel:+919715948824" class="float-btn btn-call" title="Call Us"><i class="bi bi-telephone-fill"></i></a>
-        <a href="https://wa.me/919715948824" target="_blank" class="float-btn btn-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://maps.google.com/?q=Gandhipuram, Coimbatore, Tamil Nadu" target="_blank" class="float-btn btn-loc" title="Location"><i class="bi bi-geo-alt-fill"></i></a>
-    </div>
-
-    <button id="scrollTopBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+</div>
+</footer>
+<!-- Floating Buttons -->
+<div class="floating-btns">
+<a aria-label="Call Us" class="float-btn btn-call" href="tel:+919715948824" title="Call Us"><i class="bi bi-telephone-fill"></i></a>
+<a aria-label="WhatsApp" class="float-btn btn-wa" href="https://wa.me/919715948824" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<a aria-label="Location" class="float-btn btn-loc" href="https://maps.google.com/?q=Gandhipuram, Coimbatore, Tamil Nadu" target="_blank" title="Location"><i class="bi bi-geo-alt-fill"></i></a>
+</div>
+<button aria-label="Scroll to top" id="scrollTopBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
         AOS.init({
             duration: 800,
             once: true
         });
     </script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
 </body>
 </html>
